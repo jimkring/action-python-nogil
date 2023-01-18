@@ -7,8 +7,23 @@ inputs:
     required: false
     default: 'requirements.txt'
   command:
-    description: 'commandd to execute'
+    description: 'command to execute'
     required: true
+  command2:
+    description: 'command to execute'
+    required: false
+  command3:
+    description: 'command to execute'
+    required: false
+  command4:
+    description: 'command to execute'
+    required: false
+  command5:
+    description: 'command to execute'
+    required: false
+  command6:
+    description: 'command to execute'
+    required: false
 outputs:
   time: # id of output
     description: 'The time we greeted you'
@@ -18,3 +33,8 @@ runs:
   args:
     - ${{ inputs.requirements-file }}
     - ${{ inputs.command }}
+    - ${{ inputs.command2 }}
+    - ${{ inputs.command3 }}
+    - ${{ inputs.command4 }}
+    - ${{ inputs.command5 }}
+    - ${{ inputs.command6 }}
