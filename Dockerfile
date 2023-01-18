@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 
-RUN mkdir -p /github/home/ && chmod -r ug+rwx /github/home/
+RUN mkdir -p /github/home/ && chmod -R ug+rwx /github/home/
 
 # WORKDIR /usr/src/app
 
