@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-pip install -r $REQUIREMENTS_TXT
-python $PYTHON_SCRIPT
+pip install -r $1
+eval $2
