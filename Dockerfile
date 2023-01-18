@@ -5,6 +5,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 
+RUN mkdir /github/home/ && chmod ug+rwx /github/home/
+
 # WORKDIR /usr/src/app
 
 # COPY requirements.txt ./
