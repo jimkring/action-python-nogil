@@ -6,6 +6,9 @@ inputs:
     description: 'pip requirements file'
     required: false
     default: 'requirements.txt'
+  command:
+    description: 'commandd to execute'
+    required: true
 outputs:
   time: # id of output
     description: 'The time we greeted you'
@@ -14,3 +17,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.requirements-file }}
+    - ${{ inputs.command }}
