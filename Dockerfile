@@ -5,21 +5,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 
-RUN mkdir -p /github/home/ && chmod -R ugo+rwx /github/
-
-# WORKDIR /usr/src/app
-
-# COPY requirements.txt ./
-# RUN pip install -U --force-reinstall "https://github.com/Nuitka/Nuitka/archive/factory.zip"
-# RUN pip install --no-cache-dir -r requirements.txt
-
-# COPY . .
-
-# Copies your code file from your action repository to the filesystem path `/` of the container
+# Copy entrypoint into docker container and make it executable
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod ug+x /entrypoint.sh
-
-# Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
 
 
