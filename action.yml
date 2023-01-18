@@ -1,6 +1,6 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'nogil/python'
+description: 'Run, Build, and Test Python Code in Multithreaded Python without the GIL'
 inputs:
   requirements-file:
     description: 'pip requirements file'
