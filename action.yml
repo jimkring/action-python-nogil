@@ -1,6 +1,8 @@
 # action.yml
 name: 'nogil/python'
-description: 'Run, Build, and Test Python Code in Multithreaded Python without the GIL'
+description: 'Run, Build, and Test Python Code in Multithreaded Python without the GIL -> https://github.com/colesbury/nogil/'
+icon: play
+color: green
 inputs:
   requirements-file:
     description: 'pip requirements file'
