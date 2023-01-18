@@ -17,4 +17,6 @@ fi
 if [ '$6' != '' ]; then
   eval $6
 fi
-
+if [ '$7' != '' ]; then
+  eval $7
+fi
