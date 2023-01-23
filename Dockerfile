@@ -5,9 +5,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 
+RUN mkdir htmlcov && chmod ugo+rwx htmlcov
+
 # Copy entrypoint into docker container and make it executable
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod ug+x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-
-
