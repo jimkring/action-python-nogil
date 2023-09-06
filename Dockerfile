@@ -4,6 +4,7 @@ FROM nogil/python
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
+RUN apt-get install python3-dev
 
 RUN mkdir htmlcov && chmod ugo+rwx htmlcov
 
